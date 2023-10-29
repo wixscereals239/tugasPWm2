@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        button {
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        button[type="submit"] {
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 2dvh;
+            padding: 5px;
+        }
+
+        button[type="submit"]:hover {
+            background-color: rgb(69, 184, 69);
+            color: white;
+            border: none;
+            border-radius: 2dvh;
+            padding: 5px;
+        }
+
+        button[type="reset"] {
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 2dvh;
+            padding: 5px;
+        }
+
+        button[type="reset"]:hover {
+            background-color: rgb(226, 50, 50);
+            color: white;
+            border: none;
+            border-radius: 2dvh;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3 align="center">Tambah Data Anggota</h3>
+    <form name="input_anggota">
+        <table border="0">
+            <tr>
+                <td>
+                    <label for="kd_anggota">Kode Anggota</label>
+                </td>
+                <td>
+                    <input type="text" name="kd_anggota" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="nim">NIM</label>
+                </td>
+                <td>
+                    <input type="number" name="nim" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="nama">Nama Anggota</label>
+                </td>
+                <td>
+                    <input type="text" name="nama" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="prodi">Program Studi</label>
+                </td>
+                <td>
+                    <select name="prodi">
+                        <option value="TI">Teknik Informatika</option>
+                        <option value="SI">Sistem Informasi</option>
+                        <option value="DKV">Desain Komunikasi Visual</option>
+                        <option value="MI">Manajemen Informatika</option>
+                        <option value="TS">Teknik Sipil</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="fakultas">Fakultas</label>
+                </td>
+                <td>
+                    <input type="text" name="fakultas" value="Ilmu Komputer" disabled>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="jk">Jenis Kelamin</label>
+                </td>
+                <td>
+                    <input type="radio" name="jk" value="l" checked>Laki-Laki
+                    <input type="radio" name="jk" value="p">Perempuan
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="alamat">Alamat</label>
+                </td>
+                <td>
+                    <textarea name="alamat" cols="30" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="no">Nomor Telpon</label>
+                </td>
+                <td>
+                    <input type="number" name="no">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="status">Status</label>
+                </td>
+                <td>
+                    <input type="tel" name="status">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="foto">Foto</label>
+                </td>
+                <td>
+                    <input type="file" name="foto">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="right">
+                    <button type="reset">Cancel</button>
+                    <button type="submit">Simpan</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

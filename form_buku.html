@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        td{
+            padding: 10px;
+        }
+
+        button{
+            margin-top: 10px; 
+            margin-left: 10px;  
+        }
+
+        button[type="submit"]{
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 2dvh;
+            padding: 5px;
+        }
+
+        button[type="submit"]:hover{
+            background-color: rgb(69, 184, 69);
+            color: white;
+            border: none;
+            border-radius: 2dvh;
+            padding: 5px;
+        }
+
+        button[type="reset"]{
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 2dvh;
+            padding: 5px;
+        }
+
+        button[type="reset"]:hover{
+            background-color: rgb(226, 50, 50);
+            color: white;
+            border: none;
+            border-radius: 2dvh;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3 align="center">Tambah Data Buku</h3>
+    <form name="input_buku">
+        <table border="0">
+            <tr>
+                <td>
+                    <label for="kd_buku">Kode Buku</label>
+                </td>
+                <td>
+                    <input type="text" name="kd_buku" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="judul">Judul Buku</label>
+                </td>
+                <td>
+                    <input type="text" name="judul" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="pengarang">Pengarang</label>
+                </td>
+                <td>
+                    <input type="text" name="pengarang">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="penerbit">Penerbit</label>
+                </td>
+                <td>
+                    <input type="text" name="penerbit">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="tahun">Tahun Terbit</label>
+                </td>
+                <td>
+                    <input type="date" name="tahun">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="stok">Stok</label>
+                </td>
+                <td>
+                    <input type="number" name="stok">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="tersedia">Jumlah Tersedia</label>
+                </td>
+                <td>
+                    <input type="number" name="tersedia">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="terpinjam">Jumlah Terpinjam</label>
+                </td>
+                <td>
+                    <input type="number" name="terpinjam">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="status">Status</label>
+                </td>
+                <td>
+                    <input type="text" name="status">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="right">
+                    <button type="reset">Cancel</button>
+                    <button type="submit">Simpan</button>
+                </td>
+            </tr>
+        </table>
+        
+    </form>
+</body>
+
+</html>

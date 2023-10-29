@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(58, 84, 170);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    background-color: white;
+    color: black;
+    padding: 5px;
+}
+
+
+ul li{
+    list-style-type: none;
+    padding: 5px;
+}
+
+ul{
+    padding-left: 10px;
+}
